@@ -45,6 +45,6 @@ contract C {
 // gas irOptimized: 86128
 // gas irOptimized code: 169600
 // gas legacy: 97551
-// gas legacy code: 342800
+// gas legacy code: 341600
 // gas legacyOptimized: 87848
-// gas legacyOptimized code: 191400
+// gas legacyOptimized code: 190800

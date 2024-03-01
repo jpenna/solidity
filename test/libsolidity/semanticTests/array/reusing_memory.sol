@@ -29,4 +29,4 @@ contract Main {
 // gas legacy: 101551
 // gas legacy code: 23600
 // gas legacyOptimized: 99612
-// gas legacyOptimized code: 14000
+// gas legacyOptimized code: 13400

@@ -48,7 +48,6 @@ sub_0: assembly {
       eq
       tag_5
       jumpi
-      revert(0x00, 0x00)
     tag_2:
       revert(0x00, 0x00)
         /* "optimizer_inliner_dynamic_reference/input.sol":160:215  function a() public pure returns (uint) { return f(); } */
@@ -142,7 +141,6 @@ sub_0: assembly {
     tag_20:
       tag_25
       tag_26
-      jump	// in
     tag_25:
       jump	// out
         /* "#utility.yul":196:418   */

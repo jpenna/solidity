@@ -20,6 +20,6 @@ contract D {
 // gas irOptimized code: 53800
 // gas legacy: 117834
 // gas legacy code: 100600
-// gas legacyOptimized: 113775
-// gas legacyOptimized code: 54800
+// gas legacyOptimized: 113676
+// gas legacyOptimized code: 53600
 // f() -> 27

@@ -79,18 +79,18 @@ contract D {
 // EVMVersion: =shanghai
 // ----
 // constructor(), 1 ether ->
-// gas irOptimized: 133253
-// gas irOptimized code: 297000
-// gas legacy: 151663
-// gas legacy code: 539000
-// gas legacyOptimized: 131895
-// gas legacyOptimized code: 282200
+// gas irOptimized: 133237
+// gas irOptimized code: 296800
+// gas legacy: 151647
+// gas legacy code: 538800
+// gas legacyOptimized: 131783
+// gas legacyOptimized code: 280800
 // exists() -> false
 // test_deploy_and_terminate() ->
 // ~ emit Deployed(address,bytes32) from 0x137aa4dfc0911524504fcd4d98501f179bc13b4a: 0x7e6580007e709ac52945fae182c61131d42634e8, 0x1234000000000000000000000000000000000000000000000000000000000000
-// gas irOptimized: 96689
+// gas irOptimized: 96690
 // gas irOptimized code: 20800
-// gas legacy: 98095
+// gas legacy: 98096
 // gas legacy code: 20800
 // gas legacyOptimized: 96336
 // gas legacyOptimized code: 20800

@@ -99,7 +99,7 @@ BOOST_AUTO_TEST_CASE(string_storage)
 	if (evmVersion <= EVMVersion::byzantium())
 	{
 		if (CommonOptions::get().useABIEncoderV1)
-			CHECK_DEPLOY_GAS(133045, 129731, evmVersion);
+			CHECK_DEPLOY_GAS(133045, 118847, evmVersion);
 		else
 			CHECK_DEPLOY_GAS(144995, 121229, evmVersion);
 	}
@@ -113,8 +113,9 @@ BOOST_AUTO_TEST_CASE(string_storage)
 				CHECK_DEPLOY_GAS(0, 109237, evmVersion);
 			else if (evmVersion < EVMVersion::shanghai())
 				CHECK_DEPLOY_GAS(0, 97693, evmVersion);
+			// Shanghai is cheaper due to `push0`
 			else
-				CHECK_DEPLOY_GAS(0, 97715, evmVersion);
+				CHECK_DEPLOY_GAS(0, 97067, evmVersion);
 		}
 		else
 		{
@@ -128,11 +129,11 @@ BOOST_AUTO_TEST_CASE(string_storage)
 		}
 	}
 	else if (evmVersion < EVMVersion::istanbul())
-		CHECK_DEPLOY_GAS(125829, 118559, evmVersion);
+		CHECK_DEPLOY_GAS(125829, 107949, evmVersion);
 	else if (evmVersion < EVMVersion::shanghai())
-		CHECK_DEPLOY_GAS(114077, 96461, evmVersion);
+		CHECK_DEPLOY_GAS(114077, 96457, evmVersion);
 	else
-		CHECK_DEPLOY_GAS(114077, 96479, evmVersion);
+		CHECK_DEPLOY_GAS(114077, 95831, evmVersion);
 
 	if (evmVersion >= EVMVersion::byzantium())
 	{

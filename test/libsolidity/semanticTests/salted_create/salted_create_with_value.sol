@@ -25,5 +25,5 @@ contract A {
 // gas irOptimized code: 66000
 // gas legacy: 190858
 // gas legacy code: 190200
-// gas legacyOptimized: 187292
-// gas legacyOptimized code: 94200
+// gas legacyOptimized: 187256
+// gas legacyOptimized code: 92400

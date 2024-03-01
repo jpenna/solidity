@@ -62,10 +62,10 @@ contract C {
 // gas legacy: 56978
 // gas legacy code: 127000
 // gas legacyOptimized: 55161
-// gas legacyOptimized code: 69000
+// gas legacyOptimized code: 68400
 // testInc(int32): 42 -> 43
 // gas irOptimized: 102386
 // gas legacy: 56238
 // gas legacy code: 127000
 // gas legacyOptimized: 54851
-// gas legacyOptimized code: 69000
+// gas legacyOptimized code: 68400

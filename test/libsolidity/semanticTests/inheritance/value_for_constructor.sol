@@ -43,8 +43,8 @@ contract Main {
 // gas irOptimized code: 118000
 // gas legacy: 156599
 // gas legacy code: 236400
-// gas legacyOptimized: 143688
-// gas legacyOptimized code: 119200
+// gas legacyOptimized: 143592
+// gas legacyOptimized code: 118000
 // getFlag() -> true
 // getName() -> "abc"
 // getBalances() -> 12, 10

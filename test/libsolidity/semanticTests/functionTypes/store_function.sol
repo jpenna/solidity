@@ -29,4 +29,4 @@ contract C {
 // gas legacy: 79492
 // gas legacy code: 69600
 // gas legacyOptimized: 77587
-// gas legacyOptimized code: 29200
+// gas legacyOptimized code: 28600

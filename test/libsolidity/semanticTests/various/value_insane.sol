@@ -22,6 +22,6 @@ contract test {
 // gas irOptimized code: 58800
 // gas legacy: 120199
 // gas legacy code: 133600
-// gas legacyOptimized: 114664
-// gas legacyOptimized code: 67400
+// gas legacyOptimized: 114568
+// gas legacyOptimized code: 66200
 // sendAmount(uint256): 5 -> 8

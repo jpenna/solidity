@@ -21,7 +21,7 @@ contract Main {
 // gas irOptimized code: 24200
 // gas legacy: 85098
 // gas legacy code: 58200
-// gas legacyOptimized: 80180
-// gas legacyOptimized code: 23400
+// gas legacyOptimized: 80132
+// gas legacyOptimized code: 22800
 // getFlag() -> true
 // getName() -> "abc"

@@ -27,6 +27,6 @@ contract Creator {
 // gas irOptimized: 328126
 // gas irOptimized code: 96400
 // gas legacy: 336623
-// gas legacy code: 244800
-// gas legacyOptimized: 329599
-// gas legacyOptimized code: 115600
+// gas legacy code: 243600
+// gas legacyOptimized: 329596
+// gas legacyOptimized code: 115000

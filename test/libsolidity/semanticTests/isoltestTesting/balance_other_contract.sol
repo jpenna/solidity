@@ -20,8 +20,8 @@ contract ClientReceipt {
 // gas irOptimized code: 55800
 // gas legacy: 118617
 // gas legacy code: 111400
-// gas legacyOptimized: 114163
-// gas legacyOptimized code: 61000
+// gas legacyOptimized: 114067
+// gas legacyOptimized code: 59800
 // balance -> 1500
 // gas irOptimized: 191881
 // gas legacy: 235167

@@ -82,7 +82,6 @@ sub_0: assembly {
       swap1
       jump	// out
     tag_3:
-      revert(0x00, 0x00)
     tag_4:
       revert(0x00, 0x00)
     tag_5:
