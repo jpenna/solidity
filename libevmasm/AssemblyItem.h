@@ -233,7 +233,7 @@ inline size_t bytesRequired(AssemblyItems const& _items, size_t _addressLength, 
 {
 	size_t size = 0;
 	for (AssemblyItem const& item: _items)
-			size += item.bytesRequired(_addressLength, _evmVersion, _precision);
+		size += item.bytesRequired(_addressLength, _evmVersion, _precision);
 	return size;
 }
 

@@ -804,6 +804,7 @@ std::map<u256, u256> const& Assembly::optimiseInternal(
 				try
 				{
 					optimisedChunk = eliminator.getOptimizedItems();
+					solAssert(iter >= orig);
 					shouldReplace = (
 						optimisedChunk.size()  < static_cast<size_t>(iter - orig) &&
 						!(runGas(AssemblyItems(orig, iter)) < runGas(optimisedChunk))
