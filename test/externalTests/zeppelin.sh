@@ -103,6 +103,9 @@ function zeppelin_test
     force_hardhat_compiler_binary "$config_file" "$BINARY_TYPE" "$BINARY_PATH"
     force_hardhat_compiler_settings "$config_file" "$(first_word "$SELECTED_PRESETS")"
     npm install
+    # We require to install hardhat 2.20.0 due to support for evm version cancun
+    # See: https://github.com/NomicFoundation/hardhat/issues/4176
+    npm install hardhat@2.20.0
 
     replace_version_pragmas
     for preset in $SELECTED_PRESETS; do
