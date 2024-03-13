@@ -404,11 +404,13 @@ def generate_report(
 
                             report_file.write(report.format_report())
                         except subprocess.CalledProcessError as exception:
+                            source = open(source_file_name, "r").read()
                             print(
                                 f"\n\nInterrupted by an exception while processing file "
                                 f"'{source_file_name}' with preset={preset}\n\n"
                                 f"COMPILER STDOUT:\n{exception.stdout}\n"
-                                f"COMPILER STDERR:\n{exception.stderr}\n",
+                                f"COMPILER STDERR:\n{exception.stderr}\n"
+                                f"SOURCE:\n{source}\n",
                                 file=sys.stderr
                             )
                             raise
