@@ -89,14 +89,13 @@ void GasMeterVisitor::operator()(Literal const& _lit)
 {
 	m_runGas += evmasm::GasMeter::pushGas(valueOfLiteral(_lit), m_dialect.evmVersion());
 
+	m_dataGas += singleByteDataGas();
 	if (!m_dialect.evmVersion().hasPush0() || valueOfLiteral(_lit) != u256(0))
-		m_dataGas +=
-			singleByteDataGas() +
-			evmasm::GasMeter::dataGas(
-				toCompactBigEndian(valueOfLiteral(_lit), 1),
-				m_isCreation,
-				m_dialect.evmVersion()
-			);
+		m_dataGas += evmasm::GasMeter::dataGas(
+			toCompactBigEndian(valueOfLiteral(_lit), 1),
+			m_isCreation,
+			m_dialect.evmVersion()
+		);
 }
 
 void GasMeterVisitor::operator()(Identifier const&)
@@ -123,6 +122,5 @@ void GasMeterVisitor::instructionCostsInternal(evmasm::Instruction _instruction)
 	else
 		m_runGas += evmasm::GasMeter::runGas(_instruction, m_dialect.evmVersion());
 
-	if (_instruction != evmasm::Instruction::PUSH0)
-		m_dataGas += singleByteDataGas();
+	m_dataGas += singleByteDataGas();
 }
